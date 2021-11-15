@@ -120,7 +120,7 @@
 
     <%= f.label :poster %>
     <!-- Input for poster start -->
-    <%= f.text_field :poster, class: poster_class, placeholder: "Enter poster" %>
+    <%= f.file_field :poster, class: "form-control" %>
     <!-- Input for poster end -->
     <% if poster_was_invalid %>
       <% movie.errors.full_messages_for(:poster).each do |message| %>

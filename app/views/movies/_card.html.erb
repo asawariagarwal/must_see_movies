@@ -27,7 +27,9 @@
 
       <dt>Poster</dt>
       <!-- Display poster start -->
-      <dd><%= movie.poster %></dd>
+      <dd>
+        <%= cl_image_tag @movie.poster, class: "img-fluid" %>
+      </dd>
       <!-- Display poster end -->
 
       <dt>Director</dt>
